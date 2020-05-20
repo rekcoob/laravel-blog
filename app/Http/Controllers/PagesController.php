@@ -8,12 +8,12 @@ class PagesController extends Controller
 {
     public function index(){
         $title= 'Welcome To Laravel!';
-        //-------------DVA SPOSOBY ZAPISU------------------------
-        //return view ('pages.index', compact('title'));
+
         return view ('pages.index')->with('title', $title);
     }
     public function about(){
         $title= 'AbOout Us!';
+        
         return view ('pages.about')->with('title', $title);
     }
     public function services(){
